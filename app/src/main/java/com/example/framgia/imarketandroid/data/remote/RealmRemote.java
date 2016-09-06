@@ -1,5 +1,8 @@
 package com.example.framgia.imarketandroid.data.remote;
 
+import com.example.framgia.imarketandroid.data.FakeContainer;
+import com.example.framgia.imarketandroid.data.model.Category;
+import com.example.framgia.imarketandroid.data.model.CustomMarker;
 import com.example.framgia.imarketandroid.data.model.Edge;
 import com.example.framgia.imarketandroid.data.model.Point;
 import com.example.framgia.imarketandroid.util.Constants;
@@ -94,5 +97,11 @@ public class RealmRemote {
         mRealm.beginTransaction();
         mRealm.copyToRealm(edge);
         mRealm.commitTransaction();
+    }
+    public static CustomMarker createCustomMarkerFromPoint(Point point){
+        Category category1 = new Category(FakeContainer.STORE_TYPE_2, "Bakery Store");
+        CustomMarker result= new CustomMarker(point.getId(), point.getLat(), point.getLng(), 5,
+            category1);
+        return result;
     }
 }

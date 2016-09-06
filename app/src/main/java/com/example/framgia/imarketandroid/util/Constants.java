@@ -39,9 +39,11 @@ public class Constants {
     public static final String PATTERN_SEPARATION = "-";
     public static final String SEPARATOR = "/";
     public static final String COLON = ":";
-    public static final String FIELD_NAME = "name";
-    public static final String FIELD_ID = "id";
-    public static final String FIELD_TYPE = "type";
+    public static final String FIELD_NAME = "mName";
+    public static final String FIELD_ID = "mId";
+    public static final String FIELD_TYPE = "mType";
+    public static final String STATEMENT_CALL = "tel:";
+    public static final String PHONE_NUMBER_DEMO = "0988652313";
     public static final int ALARM_START_HOUR = 9;
     public static final int ALARM_START_MINUTES = 30;
     public static final int ALARM_START_SECONDS = 0;
