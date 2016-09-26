@@ -26,7 +26,7 @@ public class Constants {
     public static final String PROFILE = "Profile";
     public static final String PREFS_NAME = "AOP_PREFS";
     public static final String NAMESERVICE = "NotificationService";
-    public static final String SECOND_CATEGORY_URL="https://imarket-api.herokuapp.com/api/";
+    public static final String SECOND_CATEGORY_URL = "https://imarket-api.herokuapp.com/api/";
     public static final String BASE_URL = "https://imarketv1.herokuapp.com/api/";
     public static final String NO_PERCENT = "0%";
     public static final String MARKET_SUGGESTION = "marketName";
@@ -48,7 +48,7 @@ public class Constants {
     public static final String FIELD_NAME = "mName";
     public static final String FIELD_ID = "mId";
     public static final String LOCATION = "Vị trí";
-    public static final String STORE= "Cửa hàng";
+    public static final String STORE = "Cửa hàng";
     public static final String FLOOR = "Số tầng";
     public static final String FIELD_TYPE = "mType";
     public static final String STATEMENT_CALL = "tel:";
@@ -76,16 +76,17 @@ public class Constants {
     public static final String MESSAGEDIGEST = "SHA";
     public static final String CLEAR_EDITTEXT = "";
     public static final int[] LIST_AVATAR_STORE =
-            {R.drawable.food_avatar, R.drawable.fashion, R.drawable.book_shop, R.drawable.cosmetic,
-                    R.drawable.stage, R.drawable.game_icon, R
-                    .drawable.smartphone, R
-                    .drawable.curret_location_icon};
+        {R.drawable.food_avatar, R.drawable.fashion, R.drawable.book_shop, R.drawable.cosmetic,
+            R.drawable.stage, R.drawable.game_icon, R
+            .drawable.smartphone, R
+            .drawable.current_location_icon};
     public static final int[] LIST_CURRENT_AVATAR_STORE =
-            {R.drawable.current_restaurent, R.drawable.current_fashion, R.drawable.current_book_shop, R.drawable
-                    .current_cosmetic,
-                    R.drawable.current_stage, R.drawable.current_game_icon, R
-                    .drawable.current_smartphone, R
-                    .drawable.curret_location_icon};
+        {R.drawable.current_restaurent, R.drawable.current_fashion, R.drawable.current_book_shop,
+            R.drawable
+                .current_cosmetic,
+            R.drawable.current_stage, R.drawable.current_game_icon, R
+            .drawable.current_smartphone, R
+            .drawable.current_location_icon};
     public static final String SHOWCASE_ID_BOOK_TABLE = "BOOK TABLE";
     public static final String SHOWCASE_ID_DETAILS_SHOP = "DETAILS SHOP";
     public static final String SHOWCASE_ID_BOOK_PRODUCT = "BOOK PRODUCT";

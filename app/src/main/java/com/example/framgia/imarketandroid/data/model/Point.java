@@ -11,15 +11,15 @@ import io.realm.annotations.PrimaryKey;
  * Created by nguyenxuantung on 24/06/2016.
  */
 public class Point extends RealmObject {
-    //@SerializedName("id")
+    @SerializedName("id")
     private int mId;
-    //@SerializedName("type")
+    @SerializedName("type")
     private int mType;
-    //@SerializedName("lat")
+    @SerializedName("lat")
     private double mLat;
-    //@SerializedName("lng")
+    @SerializedName("lng")
     private double mLng;
-    // @SerializedName("name")
+    @SerializedName("name")
     private String mName;
 
     public Point(int id, int type, double lat, double lng, String name) {

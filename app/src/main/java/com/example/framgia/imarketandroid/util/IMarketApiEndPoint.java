@@ -7,7 +7,6 @@ import com.example.framgia.imarketandroid.data.model.ListFloor;
 import com.example.framgia.imarketandroid.data.model.ListItemProduct;
 import com.example.framgia.imarketandroid.data.model.ProductList;
 import com.example.framgia.imarketandroid.data.model.Session;
-import com.example.framgia.imarketandroid.data.model.Store;
 import com.example.framgia.imarketandroid.data.model.StoreTypeList;
 import com.example.framgia.imarketandroid.data.model.Stores;
 import com.example.framgia.imarketandroid.data.model.UserModel;

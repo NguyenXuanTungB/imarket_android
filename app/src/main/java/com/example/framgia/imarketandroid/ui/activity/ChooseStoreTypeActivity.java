@@ -15,8 +15,6 @@ import com.example.framgia.imarketandroid.data.FakeContainer;
 import com.example.framgia.imarketandroid.data.listener.OnRecyclerItemInteractListener;
 import com.example.framgia.imarketandroid.data.model.Store;
 import com.example.framgia.imarketandroid.data.model.StoreType;
-import com.example.framgia.imarketandroid.data.model.Stores;
-import com.example.framgia.imarketandroid.data.model.UserModel;
 import com.example.framgia.imarketandroid.ui.adapter.ChooseStoreTypeAdapter;
 import com.example.framgia.imarketandroid.util.Constants;
 import com.example.framgia.imarketandroid.util.DialogShareUtil;

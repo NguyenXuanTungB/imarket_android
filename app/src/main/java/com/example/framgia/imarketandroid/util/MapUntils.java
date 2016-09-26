@@ -1,12 +1,15 @@
 package com.example.framgia.imarketandroid.util;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -98,13 +101,10 @@ public class MapUntils {
                 public void SwipeEventDetected(View v,
                                                OnSwipeTouchListener.SwipeTypeEnum SwipeType) {
                     if (SwipeType == OnSwipeTouchListener.SwipeTypeEnum
-                        .RIGHT_TO_LEFT) {
-                        view.startAnimation(a);
-                        view.setVisibility(View.VISIBLE);
-                    }
-                    if (SwipeType == OnSwipeTouchListener.SwipeTypeEnum.LEFT_TO_RIGHT) {
+                        .LEFT_TO_RIGHT && FloorActivity.mCheckSlideFloor) {
                         view.startAnimation(b);
                         view.setVisibility(View.INVISIBLE);
+                        FloorActivity.mCheckSlideFloor = false;
                     }
                 }
             });
@@ -116,13 +116,11 @@ public class MapUntils {
                 @Override
                 public void SwipeEventDetected(View v,
                                                OnSwipeTouchListener.SwipeTypeEnum SwipeType) {
-                    if (SwipeType == OnSwipeTouchListener.SwipeTypeEnum.RIGHT_TO_LEFT) {
+                    if (SwipeType == OnSwipeTouchListener.SwipeTypeEnum
+                        .RIGHT_TO_LEFT && FloorActivity.mCheckSlideStore == true) {
                         view.startAnimation(a);
                         view.setVisibility(View.INVISIBLE);
-                    }
-                    if (SwipeType == OnSwipeTouchListener.SwipeTypeEnum.LEFT_TO_RIGHT) {
-                        view.startAnimation(b);
-                        view.setVisibility(View.VISIBLE);
+                        FloorActivity.mCheckSlideStore = false;
                     }
                 }
             });

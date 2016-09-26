@@ -4,8 +4,10 @@
     <color name="color_primary_dark">#003e34</color>
     <color name="color_accent">#FF4081</color>
     <color name="white">#FFFFFF</color>
+    <color name="white_visible">#10FFFFFF</color>
     <color name="black">#000000</color>
     <color name="grey">#9E9E9E</color>
+    <color name="grey_transpacy">#909E9E9E</color>
     <color name="grey_darker">#AA000000</color>
     <color name="default_button_highlight_color">#3c7c7b7b</color>
     <color name="default_background_color">#dcdada</color>
