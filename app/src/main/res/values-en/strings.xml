@@ -203,6 +203,7 @@
     <string name="cosmetic_name">Cosmetics store</string>
     <string name="movie_theater">Cinema</string>
     <string name="game_center_name">Entertainment center</string>
+    <string name="mobile_store">Mobile Store</string>
     <string name="confirm_signout">Are you LogOut?</string>
     <string name="cancel">Cancel</string>
     <string name="signout_done_message">LogOut Succsessly !</string>

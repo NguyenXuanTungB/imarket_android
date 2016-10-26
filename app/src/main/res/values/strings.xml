@@ -204,10 +204,11 @@
     <string name="toast_follow">Follow Store</string>
     <string name="item_logout">Đăng Xuât</string>
     <string name="fashion_name">cửa hàng quần áo</string>
-    <string name="book_shop_name">cửa hàng sách</string>
-    <string name="cosmetic_name">cửa hàng mỹ phẩm</string>
+    <string name="book_shop_name">Cửa hàng sách</string>
+    <string name="cosmetic_name">Cửa hàng mỹ phẩm</string>
     <string name="movie_theater">Rạp chiếu phim</string>
     <string name="game_center_name">Trung tâm giải trí</string>
+    <string name="mobile_store">Cửa hàng điện thoại</string>
     <string name="confirm_signout">Bạn có muốn đăng xuất ?</string>
     <string name="cancel">Cancel</string>
     <string name="signout_done_message">Đăng xuất thành công !</string>
