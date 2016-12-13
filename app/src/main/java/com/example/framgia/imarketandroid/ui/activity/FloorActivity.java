@@ -562,14 +562,14 @@ public class FloorActivity extends AppCompatActivity implements AdapterView
         }
     }
 
-    private void setListEdge() {
-        RealmResults<Edge> edges = RealmRemote.getListEdgeDisplay();
-        for (Edge edge : edges) {
-            mMap.addPolyline(new PolylineOptions()
-                    .add(RealmRemote.getLocationFromName(edge.getNameStart()),
-                            RealmRemote.getLocationFromName(edge.getNameEnd())).width(4));
-        }
-    }
+//    private void setListEdge() {
+//        RealmResults<Edge> edges = RealmRemote.getListEdgeDisplay();
+//        for (Edge edge : edges) {
+//            mMap.addPolyline(new PolylineOptions()
+//                    .add(RealmRemote.getLocationFromName(edge.getNameStart()),
+//                            RealmRemote.getLocationFromName(edge.getNameEnd())).width(4));
+//        }
+//    }
 
     @Override
     protected void onPause() {
