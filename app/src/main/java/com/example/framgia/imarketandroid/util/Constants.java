@@ -127,6 +127,8 @@ public class Constants {
     public class ResultFinishLoadData {
         public static final int LOAD_DATA_FINISH = 1;
         public static final int LOAD_EVENT_FINISH = 2;
+        public static final int LOAD_FLOOR_FINISH = 3;
+        public static final int LOAD_STORETYPE_FINISH= 4;
     }
 
     public class ParamAPI {
@@ -147,6 +149,7 @@ public class Constants {
         public static final String PARAM_STORE_TYPE_LIST = "store_type_list";
         public static final String GET_COMMERCE_CENTERS_PATH = "commerce_centers";
         public static final String GET_FLOORS_PATH = "commerce_centers/{commerceCenterId}/floors";
+        public static final String GET_STORE_TYPE_PATH = "commerce_centers/{commerceCenterId}/store_types";
         public static final String PARAM_FLOORS = "floors";
         public static final String GET_PRODUCTS_PATH = "categories/{idCategory}/products";
         public static final String GET_EVENTS_PATH = "stores/{storeId}/events";
@@ -169,8 +172,9 @@ public class Constants {
         public static final String[] LIST_NAME_STORE = {"Cột mốc", "Cửa hàng ăn uống", "Cửa hàng " +
             "quần áo", "Cửa hàng sách", "Cửa hàng mỹ phẩm", "Rạp chiếu phim", "Trung tâm giải trí",
             "Cửa hàng điện thoại"};
-        public static final String[] LIST_NAME_SUGGEST={"ăn ngon", "để xe", "đợi người", "xem phim",
-            "cảnh đẹp"};
+        public static final String[] LIST_NAME_SUGGEST =
+            {"ăn ngon", "để xe", "đợi người", "xem phim",
+                "cảnh đẹp"};
     }
 
     public static class Instruction {
@@ -182,5 +186,4 @@ public class Constants {
         public static final String SHOWCASE_ID_HOME = "HOME";
         public static final String GOT_IT = "SKIP";
     }
-
 }

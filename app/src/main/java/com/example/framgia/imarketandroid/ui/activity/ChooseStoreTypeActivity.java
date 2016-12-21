@@ -42,7 +42,7 @@ public class ChooseStoreTypeActivity extends AppCompatActivity implements OnRecy
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_store_type);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         mRecyclerView.addItemDecoration(new LinearItemDecoration(this));
-        mListStore = FakeContainer.initStore();
+     //   mListStore = FakeContainer.initStore();
         mAdapter = new ChooseStoreTypeAdapter(this, mListStore);
         mAdapter.setOnRecyclerItemInteractListener(this);
         mRecyclerView.setAdapter(mAdapter);

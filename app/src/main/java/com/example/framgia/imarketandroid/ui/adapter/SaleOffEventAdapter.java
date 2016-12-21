@@ -76,6 +76,7 @@ public class SaleOffEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         holder.getItemViewType();
     }
 
+    // trả về view cho các phần tử trong recyclerview theo loại tương ứng
     private void configureViewHolder1(HolderOneBannerImage vh1, int position) {
         ImageEvent1 imageEvent1 = (ImageEvent1) mItems.get(position);
         if (imageEvent1 != null) {
@@ -122,6 +123,7 @@ public class SaleOffEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         return TYPE_CATEGORY;
     }
 
+    // viewholder gồm 2 ảnh
     public class HolderTwoBanner extends RecyclerView.ViewHolder {
         private ImageView imageBanner2, imageBanner3;
 
@@ -132,6 +134,7 @@ public class SaleOffEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
+    //viewholder gồm 1 ảnh nằm ngang
     public class HolderOneBannerImage extends RecyclerView.ViewHolder {
         private ImageView imageBanner1;
 
@@ -141,6 +144,7 @@ public class SaleOffEventAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
+    // viewholder gồm textview và 1 recyclerView nằm ngang
     public class HolderCategorySaleOff extends RecyclerView.ViewHolder {
         private TextView mTextTitleCategory;
         private RecyclerView mRecyclerView;

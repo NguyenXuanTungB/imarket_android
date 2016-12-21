@@ -109,7 +109,7 @@ public class SavePointActivity extends AppCompatActivity implements View.OnClick
                     listPoint.add(point);
                     StoreType store = new StoreType(0, Constants.DataList.LIST_NAME_STORE[point
                         .getType()] + ": " + mformat.format(distance) + Constants.METTERS,
-                        Constants.DataList.LIST_AVATAR_STORE[point.getType()], 0);
+                        FloorActivity.sStoreTypes.get(point.getType()-1).getAvatar(), 1);
                     mListStore.add(store);
                 }
             }

@@ -62,4 +62,7 @@ public interface IMarketApiEndPoint {
     @GET(Constants.PathAPI.GET_EVENTS_PATH)
     Call<EventList> getEventInStore(@Path(value = Constants.ParamAPI.STORE_ID, encoded = true)
                                         int storeId);
+    @GET(Constants.PathAPI.GET_STORE_TYPE_PATH)
+    Call<StoreTypeList> getListStoreTypeByCommerceId(
+        @Path(value = Constants.ParamAPI.COMMERCE_CENTER_ID, encoded = true) int commerceCenterId);
 }

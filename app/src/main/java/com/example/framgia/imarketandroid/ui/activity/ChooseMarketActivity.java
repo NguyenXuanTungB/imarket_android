@@ -461,7 +461,7 @@ public class ChooseMarketActivity extends AppCompatActivity implements
     }
 
     private void getRecycleFavorite() {
-        // fake dữ liệu danh sách yêu thíc
+        // fake dữ liệu danh sách yêu thích
         mDrawerItems = FakeContainer.initDrawerItems();
         mRecyclerDrawerAdapter = new RecyclerDrawerAdapter(this, mDrawerItems);
         mRecyclerDrawer.setAdapter(mRecyclerDrawerAdapter);
