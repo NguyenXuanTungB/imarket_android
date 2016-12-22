@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 import com.example.framgia.imarketandroid.R;
 import com.example.framgia.imarketandroid.data.model.Category;
-import com.example.framgia.imarketandroid.data.model.Event;
 import com.example.framgia.imarketandroid.data.remote.RealmRemote;
 import com.example.framgia.imarketandroid.ui.adapter.ViewPagerAdapter;
 import com.example.framgia.imarketandroid.ui.fragments.CategoryStallFragment;
@@ -54,16 +53,13 @@ public class HomeStoreActivity extends AppCompatActivity implements SearchView
     private ShopDetailInterfaceFragment mShopDetailInterfaceFragment;
     private ViewPagerAdapter mPagerAdapter;
     private boolean mIsCached;
-    private List<Event> mEvents = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_store);
-        if (ChooseMarketActivity.sFlagIntentEvent) {
-            mEvents = ChooseMarketActivity.sEventList;
-        }
         initView();
+        // TODO: 29/08/2016  remove badge
         ShortcutBadger.removeCount(this);
     }
 
@@ -92,11 +88,10 @@ public class HomeStoreActivity extends AppCompatActivity implements SearchView
             // có mạng thì add các Fragment
             mPagerAdapter.addFragment(new CategoryStallFragment(),
                 getString(R.string.title_fragment_Category));
-            mPagerAdapter.addFragment(new SaleOffEventFragment(mEvents, mCallback),
+            mPagerAdapter.addFragment(new SaleOffEventFragment(),
                 getString(R.string.title_fragment_saleoffevent));
             mSuggestStoreFragment = new SuggestStoreFragment();
-            mPagerAdapter
-                .addFragment(mSuggestStoreFragment, getString(R.string.title_fragment_rate));
+            mPagerAdapter.addFragment(mSuggestStoreFragment, getString(R.string.title_fragment_rate));
             mShopDetailInterfaceFragment = new ShopDetailInterfaceFragment(mCallback);
             mPagerAdapter.addFragment(mShopDetailInterfaceFragment,
                 getString(R.string.title_fragment_informationstore));
@@ -105,8 +100,7 @@ public class HomeStoreActivity extends AppCompatActivity implements SearchView
             // không có mạng
             // kiểm tra dữ liệu cache trước đó
             if (RealmRemote.getListCategory().size() > 0) {
-                mPagerAdapter.addFragment(new CategoryStallFragment(),
-                    getString(R.string.title_fragment_Category));
+                mPagerAdapter.addFragment(new CategoryStallFragment(), getString(R.string.title_fragment_Category));
             } else {
                 mPagerAdapter.addFragment(new NoConnectFragment(HomeStoreActivity.this),
                     getString(R.string.title_fragment_Category));

@@ -104,6 +104,8 @@ public class Constants {
     public static final java.lang.String FORMAT_DATE = "dd/MM/yyyy hh:mm:ss";
     public static final String NULL_DATA = "Null data";
     public static final int NUMBER_OF_STARS = 5;
+    public static final String CATEGORY_INTENT = "category";
+    public static final String COMMERCE_INTENT = "commerce";
     public static final int LIMIT_STAR = 5;
     public static final String INTERNET_FILTER = "android.net.conn.CONNECTIVITY_CHANGE";
     public static final String COMMERCE_CENTER = "Commerce center";
@@ -132,6 +134,8 @@ public class Constants {
     public class ResultFinishLoadData {
         public static final int LOAD_DATA_FINISH = 1;
         public static final int LOAD_EVENT_FINISH = 2;
+        public static final int LOAD_FLOOR_FINISH = 3;
+        public static final int LOAD_STORETYPE_FINISH= 4;
     }
 
     public class ParamAPI {
@@ -152,6 +156,7 @@ public class Constants {
         public static final String PARAM_STORE_TYPE_LIST = "store_type_list";
         public static final String GET_COMMERCE_CENTERS_PATH = "commerce_centers";
         public static final String GET_FLOORS_PATH = "commerce_centers/{commerceCenterId}/floors";
+        public static final String GET_STORE_TYPE_PATH = "commerce_centers/{commerceCenterId}/store_types";
         public static final String PARAM_FLOORS = "floors";
         public static final String GET_PRODUCTS_PATH = "categories/{idCategory}/products";
         public static final String GET_EVENTS_PATH = "stores/{storeId}/events";
